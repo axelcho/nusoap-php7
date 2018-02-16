@@ -71,7 +71,7 @@ require_once('class.soap_server.php');*/
 
 // class variable emulation
 // cf. http://www.webkreator.com/php/techniques/php-static-class-variables.html
-$GLOBALS['_transient']['static']['nusoap_base']['globalDebugLevel'] = 9;
+//$GLOBALS['_transient']['static']['nusoap_base']['globalDebugLevel'] = 9;
 
 /**
 *
@@ -223,7 +223,7 @@ class nusoap_base {
 	* @access	public
 	*/
 	function __construct() {
-		$this->debugLevel = $GLOBALS['_transient']['static']['nusoap_base']['globalDebugLevel'];
+		$this->debugLevel = 9;
 	}
 
 	/**
